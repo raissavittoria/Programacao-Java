@@ -1,3 +1,5 @@
+package Agregacao;
+
 public class TestaLoja {
 
     public static void main(String[] args) {

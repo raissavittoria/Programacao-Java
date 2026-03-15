@@ -1,3 +1,5 @@
+package Agregacao;
+
 public class ItemVenda {
 
     private int id;

@@ -1,3 +1,5 @@
+package ClassesObjetos;
+
 public class Placar {
 
     public String nomeTimeCasa;

@@ -1,3 +1,5 @@
+package ClassesObjetos;
+
 public class TestaStreaming {
 
     public static void main(String[] args) {

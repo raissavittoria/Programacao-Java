@@ -1,3 +1,5 @@
+package Agregacao;
+
 import java.util.ArrayList;
 
 public class Carrinho {
@@ -38,10 +40,22 @@ public class Carrinho {
 
     @Override
     public String toString() {
-        return "Carrinho{" +
-                "nomeLoja='" + nomeLoja + '\'' +
-                ", produtos=" + produtos +
-                ", itensVenda=" + itensVenda +
-                '}';
+
+        String texto = "===== CARRINHO DA LOJA =====\n";
+        texto += "Loja: " + nomeLoja + "\n\n";
+
+        texto += "Produtos adicionados:\n";
+        for (Produto p : produtos) {
+            texto += p + "\n";
+        }
+
+        texto += "\nItens de Venda:\n";
+        for (ItemVenda i : itensVenda) {
+            texto += i + "\n";
+        }
+
+        texto += "=============================";
+
+        return texto;
     }
 }

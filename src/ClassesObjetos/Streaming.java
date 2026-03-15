@@ -1,3 +1,5 @@
+package ClassesObjetos;
+
 public class Streaming {
 
     public String usuario;
@@ -27,7 +29,7 @@ public class Streaming {
             ultimoFilmeAssistido = nomeFilme;
             System.out.println("Assistindo: " + nomeFilme);
         } else {
-            System.out.println("Conta suspensa. Pague a fatura.");
+            System.out.println("ClassesObjetos.Conta suspensa. Pague a fatura.");
         }
     }
 

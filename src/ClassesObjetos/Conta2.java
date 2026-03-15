@@ -1,3 +1,5 @@
+package ClassesObjetos;
+
 public class Conta2 {
 
     public int numeroConta;
@@ -21,14 +23,14 @@ public class Conta2 {
             saldo += valor;
             System.out.println("Depósito realizado. Saldo atual: R$ " + saldo);
         } else {
-            System.out.println("Conta inativa.");
+            System.out.println("ClassesObjetos.Conta inativa.");
         }
     }
 
     // Sacar
     public void sacar(float valor) {
         if (!status) {
-            System.out.println("Conta inativa.");
+            System.out.println("ClassesObjetos.Conta inativa.");
         } else if (saldo >= valor) {
             saldo -= valor;
             System.out.println("Saque realizado. Saldo atual: R$ " + saldo);
@@ -41,7 +43,7 @@ public class Conta2 {
     public void encerrarConta() {
         if (saldo == 0) {
             status = false;
-            System.out.println("Conta encerrada.");
+            System.out.println("ClassesObjetos.Conta encerrada.");
         } else {
             System.out.println("Saque o dinheiro antes de encerrar a conta.");
         }
@@ -51,7 +53,7 @@ public class Conta2 {
     public String toString() {
         String situacao = status ? "Ativa" : "Encerrada";
 
-        return "Conta: " + numeroConta +
+        return "ClassesObjetos.Conta: " + numeroConta +
                 "\nAgência: " + agencia +
                 "\nCliente: " + nomeCliente +
                 "\nSaldo: R$ " + saldo +
